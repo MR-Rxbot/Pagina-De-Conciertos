@@ -6,25 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BuyTickets</title>
     <link rel="stylesheet" href="style.css">
+
+
+    <!--Logos de font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!--Estilo de letra desde google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+
+    <!--Animaciones con css-->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
 </head>
 <body>
     <head id="barra-navegacion">
         <nav id="navbar">
             <ul id="container-li">
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Comprar tickets</a></li>
+                <li><a href="#">Ayuda</a></li>
                 <li><a href="#">Futuros Conciertos</a></li>
             </ul>
         </nav>
     </head>
     <main>
+
+        <h1 id="tituloP">Ecommerce Buy Tickets</h1>
     <div id="container-img">
 
             <div class="card">
                     <img class ="photo" src="src/pearl-jam-ten-vinilo.jpg"
                      alt="Concierto de pearl jam"> 
                      <button>Comprar entradas</button>
-                     <button>Info</button>
+                     
+                     <button id="hide_text_btn" >Info</button>
             </div>
 
             <div class="card">
@@ -47,21 +66,21 @@
             <button>Info</button>
         </div>
         <div class="card">
-            <img class ="photo" src="src/acdc-highway-to-hell-vinilo.jpg"
+            <img class ="photo" src="src/descarga (1).jfif"
             alt="Concierto de pearl jam"> 
 
             <button>Comprar entradas</button>
             <button>Info</button>
         </div>
         <div class="card">
-            <img class ="photo" src="src/acdc-highway-to-hell-vinilo.jpg"
+            <img class ="photo" src="src/unnamed-1-1.jpg"
             alt="Concierto de pearl jam"> 
 
             <button>Comprar entradas</button>
             <button>Info</button>
         </div>
         <div class="card">
-            <img class ="photo" src="src/acdc-highway-to-hell-vinilo.jpg"
+            <img class ="photo" src="src/burn.jpg"
             alt="Concierto de pearl jam"> 
 
             <button>Comprar entradas</button>
@@ -75,7 +94,78 @@
             <button>Info</button>
         </div>
     </div>
+
+    <div class="content">
+        <div class="contact-wrapper">
+            <div class="contact-form">
+                <h3>Contacta con <span>nosotros</span></h3>
+                <form action=" ">
+                    <p>
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" type="text" name="Nombre">
+                    </p>
+
+                    <p>
+                        <label for="apellido">Apellido</label>
+                        <input id="apellido" type="text" name="apellido">
+                    </p>
+
+                    <p>
+                        <label for="celular">Celular</label>
+                        <input id="celular" type="tel" name="correo">
+                    </p>
+
+                    <p>
+                        <label for="correo">Correo Electronico</label>
+                        <input id="correo" type="email" name="correo">
+                    </p>
+
+
+                    <p class="block">
+                        <label for="comentario">Comentario</label>
+                        <textarea name="comentario" id="comentario" rows="3"></textarea>
+                    </p>
+                    <p class="block">
+                        <button type="submit">
+                            Enviar
+                        </button>
+                    </p>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h4>Más información</h4>
+                <ul>
+                    <li><i class="fas fa-map-marked">Santiago centro, Huerfanos #345</i></li>
+                    <li><i class="fas fa-phone-square">+56055457654</i></li>
+                    <li><i class="fas fa-mail-bulk">empresa@empresa.cl</i></li>
+                </ul>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                     Sed pellentesque suscipit ornare. Donec auctor lectus sed vehicula tempor.
+                      Morbi luctus pulvinar semper. Vivamus id mauris sit amet eros placerat luctus
+                       eu in mauris. Curabitur lacinia aliquet diam non aliquet. Fusce at lacus posuere, malesuada
+                        metus eleifend, ultricies tortor.
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+
+                <p>
+                    empresa@empresa.cl
+                </p>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+
+
     </main>
+
+
+
+
     <footer>
 
     </footer>
